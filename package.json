@@ -1,14 +1,23 @@
 {
   "name": "piano",
   "version": "1.0.0",
-  "description": "",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "author": "",
+  "author": "Fukusan",
   "license": "ISC",
   "devDependencies": {
     "electron": "^8.2.5"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fukusan64/Piano.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Fukusan64/Piano/issues"
+  },
+  "homepage": "https://github.com/Fukusan64/Piano#readme",
+  "description": ""
 }
