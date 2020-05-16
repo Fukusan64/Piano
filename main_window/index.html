@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Piano</title>
+  </head>
+  <body>
+    <div class="keyboard">
+      <div id="key1" class="key whiteKey" data-active="false"><span class="label" id="label1">1</span></div>
+      <div id="key2" class="key blackKey" data-active="false"><span class="label" id="label2">2</span></div>
+      <div id="key3" class="key whiteKey" data-active="false"><span class="label" id="label3">3</span></div>
+      <div id="key4" class="key blackKey" data-active="false"><span class="label" id="label4">4</span></div>
+      <div id="key5" class="key whiteKey" data-active="false"><span class="label" id="label5">5</span></div>
+      <div id="key6" class="key whiteKey" data-active="false"><span class="label" id="label6">6</span></div>
+      <div id="key7" class="key blackKey" data-active="false"><span class="label" id="label7">7</span></div>
+      <div id="key8" class="key whiteKey" data-active="false"><span class="label" id="label8">8</span></div>
+      <div id="key9" class="key blackKey" data-active="false"><span class="label" id="label9">9</span></div>
+      <div id="key10" class="key whiteKey" data-active="false"><span class="label" id="label10">10</span></div>
+      <div id="key11" class="key blackKey" data-active="false"><span class="label" id="label11">11</span></div>
+      <div id="key12" class="key whiteKey" data-active="false"><span class="label" id="label12">12</span></div>
+      <div id="key13" class="key whiteKey" data-active="false"><span class="label" id="label13">13</span></div>
+      <div id="key14" class="key blackKey" data-active="false"><span class="label" id="label14">14</span></div>
+      <div id="key15" class="key whiteKey" data-active="false"><span class="label" id="label15">15</span></div>
+    </div>
+    <div class="octCtrl">
+      <div id="key16" class="octaveSw" data-active="false"><span>-</span>(<span id="label16"></span>)</div>
+      <div class="octDisplay"><span id="octave">0</span></div>
+      <div id="key17" class="octaveSw" data-active="false"><span>+</span>(<span id="label17"></span>)</div>
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./js/soundGenerator.js" defer></script>
+    <script src="./js/piano.js" defer></script>
+    <script src="./js/index.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+html,body,.keyboard{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+}
+.keyboard{
+    position: relative;
+    background-color: #111;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 5%;
+    height: calc(100% - 40px);
+}
+.key{
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid #111;
+}
+
+.key[data-active="true"]{
+    background-color: #f80;
+}
+
+.label{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.blackKey{
+    background-color: #111;
+    height: 47.5%;
+    width: calc(90% / 12);
+    border-radius: 0 0 5px 5px;
+    z-index: 100;
+    color: #eee;
+}
+.whiteKey{
+    background-color: #eee;
+    height: 95%;
+    width: calc(90% / 9);
+    border-radius: 0 0 10px 10px;
+    color: #111;
+}
+.octCtrl{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 30px;
+    margin: 5px;
+    vertical-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.octDisplay{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}
+
+.octaveSw{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 30px;
+    background-color: #fb5;
+    text-align: center;
+    border-radius: 5px;
+}
+.octaveSw[data-active="true"]{
+    background-color: #f80;
+}
+
+#key1{left: calc(90% / 9 * 0 + 5%);}
+#key2{left: calc(90% / 9 * 1 - 90% / 24 + 5%);}
+#key3{left: calc(90% / 9 * 1 + 5%);}
+#key4{left: calc(90% / 9 * 2 - 90% / 24 + 5%);}
+#key5{left: calc(90% / 9 * 2 + 5%);}
+#key6{left: calc(90% / 9 * 3 + 5%);}
+#key7{left: calc(90% / 9 * 4 - 90% / 24 + 5%);}
+#key8{left: calc(90% / 9 * 4 + 5%);}
+#key9{left: calc(90% / 9 * 5 - 90% / 24 + 5%);}
+#key10{left: calc(90% / 9 * 5 + 5%);}
+#key11{left: calc(90% / 9 * 6 - 90% / 24 + 5%);}
+#key12{left: calc(90% / 9 * 6 + 5%);}
+#key13{left: calc(90% / 9 * 7 + 5%);}
+#key14{left: calc(90% / 9 * 8 - 90% / 24 + 5%);}
+#key15{left: calc(90% / 9 * 8 + 5%);}
