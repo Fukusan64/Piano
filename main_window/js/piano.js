@@ -9,11 +9,18 @@ class Piano {
         this.changeOctEvent = () => {};
         this.soundGeneratorArray = [];
         this.gainNode = audioContext.createGain();
+        const compressor = audioContext.createDynamicsCompressor();
+        compressor.threshold.setValueAtTime(-30, audioContext.currentTime);
+        compressor.knee.setValueAtTime(20, audioContext.currentTime);
+        compressor.ratio.setValueAtTime(6, audioContext.currentTime);
+        compressor.attack.setValueAtTime(0, audioContext.currentTime);
+        compressor.release.setValueAtTime(0.25, audioContext.currentTime);
+        compressor.connect(this.gainNode);
 
         const KEY_SIZE = 15;
         for (let i = 0; i < KEY_SIZE; i++) {
             this.soundGeneratorArray[i] = new SoundGenerator(audioContext);
-            this.soundGeneratorArray[i].connect(this.gainNode);
+            this.soundGeneratorArray[i].connect(compressor);
         }
     }
 
