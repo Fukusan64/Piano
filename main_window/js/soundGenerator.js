@@ -25,7 +25,7 @@ class SoundGenerator {
 
         this.oscillatorArr.forEach(e => e.start(currentTime));
         this.gain.gain.linearRampToValueAtTime(1, currentTime + 0.01);
-        this.gain.gain.linearRampToValueAtTime(0, currentTime + 3);
+        this.gain.gain.linearRampToValueAtTime(0, currentTime + 2);
 
         this.playingFlag = true;
 

@@ -9,8 +9,9 @@ class Piano {
         this.changeOctEvent = () => {};
         this.soundGeneratorArray = [];
         this.gainNode = audioContext.createGain();
+        
         const compressor = audioContext.createDynamicsCompressor();
-        compressor.threshold.setValueAtTime(-30, audioContext.currentTime);
+        compressor.threshold.setValueAtTime(-20, audioContext.currentTime);
         compressor.knee.setValueAtTime(20, audioContext.currentTime);
         compressor.ratio.setValueAtTime(6, audioContext.currentTime);
         compressor.attack.setValueAtTime(0, audioContext.currentTime);
