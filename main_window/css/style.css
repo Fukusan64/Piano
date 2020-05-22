@@ -38,7 +38,7 @@ html,body{
 .blackKey{
     background-color: #111;
     height: 47.5%;
-    width: calc(90% / 12);
+    width: 4%;/* calc(90% / 15); */
     border-radius: 0 0 5px 5px;
     z-index: 100;
     color: #eee;
@@ -46,7 +46,7 @@ html,body{
 .whiteKey{
     background-color: #eee;
     height: 95%;
-    width: calc(90% / 9);
+    width: 7.5%;/* calc(90% / 12); */
     border-radius: 0 0 10px 10px;
     color: #111;
 }
@@ -82,18 +82,24 @@ html,body{
     background-color: #f80;
 }
 
-#key1{left: calc(90% / 9 * 0 + 5%);}
-#key2{left: calc(90% / 9 * 1 - 90% / 24 + 5%);}
-#key3{left: calc(90% / 9 * 1 + 5%);}
-#key4{left: calc(90% / 9 * 2 - 90% / 24 + 5%);}
-#key5{left: calc(90% / 9 * 2 + 5%);}
-#key6{left: calc(90% / 9 * 3 + 5%);}
-#key7{left: calc(90% / 9 * 4 - 90% / 24 + 5%);}
-#key8{left: calc(90% / 9 * 4 + 5%);}
-#key9{left: calc(90% / 9 * 5 - 90% / 24 + 5%);}
-#key10{left: calc(90% / 9 * 5 + 5%);}
-#key11{left: calc(90% / 9 * 6 - 90% / 24 + 5%);}
-#key12{left: calc(90% / 9 * 6 + 5%);}
-#key13{left: calc(90% / 9 * 7 + 5%);}
-#key14{left: calc(90% / 9 * 8 - 90% / 24 + 5%);}
-#key15{left: calc(90% / 9 * 8 + 5%);}
+#key1{left:calc(7.5% * 0 + 5%);}
+#key2{left:calc(7.5% * 0.5 + 5% + 2%);}
+#key3{left:calc(7.5% * 1 + 5%);}
+#key4{left:calc(7.5% * 1.5 + 5% + 2%);}
+#key5{left:calc(7.5% * 2 + 5%);}
+#key6{left:calc(7.5% * 3 + 5%);}
+#key7{left:calc(7.5% * 3.5 + 5% + 2%);}
+#key8{left:calc(7.5% * 4 + 5%);}
+#key9{left:calc(7.5% * 4.5 + 5% + 2%);}
+#key10{left:calc(7.5% * 5 + 5%);}
+#key11{left:calc(7.5% * 5.5 + 5% + 2%);}
+#key12{left:calc(7.5% * 6 + 5%);}
+#key13{left:calc(7.5% * 7 + 5%);}
+#key14{left:calc(7.5% * 7.5 + 5% + 2%);}
+#key15{left:calc(7.5% * 8 + 5%);}
+#key16{left:calc(7.5% * 8.5 + 5% + 2%);}
+#key17{left:calc(7.5% * 9 + 5%);}
+#key18{left:calc(7.5% * 10 + 5%);}
+#key19{left:calc(7.5% * 10.5 + 5% + 2%);}
+#key20{left:calc(7.5% * 11 + 5%);}
+

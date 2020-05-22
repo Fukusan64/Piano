@@ -9,7 +9,8 @@ class Piano {
         this.changeOctEvent = () => {};
         this.soundGeneratorArray = [];
         this.gainNode = audioContext.createGain();
-        
+        this.KEY_SIZE = 20;
+
         const compressor = audioContext.createDynamicsCompressor();
         compressor.threshold.setValueAtTime(-20, audioContext.currentTime);
         compressor.knee.setValueAtTime(20, audioContext.currentTime);
@@ -18,8 +19,7 @@ class Piano {
         compressor.release.setValueAtTime(0.25, audioContext.currentTime);
         compressor.connect(this.gainNode);
 
-        const KEY_SIZE = 15;
-        for (let i = 0; i < KEY_SIZE; i++) {
+        for (let i = 0; i < this.KEY_SIZE; i++) {
             this.soundGeneratorArray[i] = new SoundGenerator(audioContext);
             this.soundGeneratorArray[i].connect(compressor);
         }
@@ -59,10 +59,10 @@ class Piano {
     }
 
     onKeyDown(index) {
-        if (index === 15) {
+        if (index === this.KEY_SIZE) {
             this.changeOct(-1);
             this.keyDownEvent(index);
-        } else if (index === 16) {
+        } else if (index === this.KEY_SIZE + 1) {
             this.changeOct(1);
             this.keyDownEvent(index);
         } else {
@@ -72,7 +72,7 @@ class Piano {
 
     onKeyUp(index) {
         this.keyUpEvent(index);
-        if (index >= 15) return;
+        if (index >= this.KEY_SIZE) return;
         this.stop(index);
     }
 
