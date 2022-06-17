@@ -8,7 +8,7 @@
   "author": "Fukusan",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^9.4.0"
+    "electron": "^15.5.5"
   },
   "dependencies": {},
   "repository": {
